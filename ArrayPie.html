@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"> </script>
+    <link  rel = "stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> 
+    <title>My chart.js Chart </title>
+</head>
+<body>
+    <div class = "container"> 
+        <canvas id="myChart"></canvas>
+</div>
+
+<script> 
+
+var doughnutChart = new Chart (resultsCanvas, {
+type: 'doughnut', 
+data: chartData, 
+options: chartOptions
+})
+  var data = { 
+    labels: ['100-96%', '95-91%', '90-86%', '85-81%', '80-76%', '>75%'], 
+    datasets: [{ 
+        data:[
+            13, 
+            11, 
+            8, 
+            7, 
+            3, 
+            1
+        ], 
+         backgroundColor:[
+         '#45EBA5', 
+             '#21ABA5', 
+             '#1D566E', 
+             '#163A5F', 
+             '#28544B', 
+             '#0881A3', 
+             
+        ], 
+        borderWidth:2, 
+        borderColor: 'black', 
+        hoverBorderWidth: 3, 
+        hoverBorderColor: '#000'
+    }] 
+  }
+</script> 
+
+</body>
+
+</body>
+</html>
