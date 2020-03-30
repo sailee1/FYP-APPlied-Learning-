@@ -4,9 +4,15 @@ const mongoose = require('mongoose')
 const passport = require('passport')
 const flash = require('connect-flash')
 const session = require('express-session')
-const io = require('socket.io')(server)
-
 const app = express() 
+var http = require("http").Server(app); 
+var io = require("socket.io")(http); 
+var Posts = require('./schema/posts'); 
+var Comments = require('./schema/comments'); 
+
+const postsRouter = require('./routes/posts')
+
+var port = process.env.port || 3000; 
 
 require('./config/passport')(passport)
 
@@ -19,6 +25,7 @@ mongoose.connect(
     .catch(err => console.log(err))
 
 
+app.use(express.static('public'))
 app.use(expressLayouts)
 app.set('view engine', 'ejs')
 
@@ -43,65 +50,65 @@ app.use(function(req,res, next){
     next()
 })
 
-app.use('/', require('./routes/index.js')) 
+app.use('/', require('./routes/login.js')) 
 app.use('/users', require('./routes/users.js'))
 
+app.use('/posts', postsRouter)
 
-
-const rooms = { }
-
-app.get('/', (req,res) =>{
-    res.render('chat', {rooms:rooms})
+app.use('/pie', function(req,res){
+    res.sendFile(__dirname + 'pie.html')
 })
 
-app.post('/room', (req,res) =>{
-    if(rooms[req.body.room] != null) {
-        return res.redirect('/')
-    }
-    rooms[req.body.room] = {users: {} }
-    res.redirect(req.body.room)
-    io.emit('room-created', req.body.room)
+
+
+app.get('/posts', function (req, res){
+    Posts.find({}, function(err,posts){
+        if (err){
+            console.log(err);
+        } else {
+            res.render('index', {posts:posts})
+        }
+    })
 })
 
-app.get('/:room', (req,res) =>{
-    if(rooms[req.params.room] == null) {
-        return res.redirect('/')
-    }
-
-    res.render('room', {roomName: req.params.room})
+app.get('/posts/detail/:id', function(req,res){
+    Posts.findById(req.params.id, function (err, postDetail){
+        if(err){
+            console.log(err)
+        }else{
+            Comments.find({'postId': req.params.id}, function (err,comments){
+                res.render('post-detail', {postDetail: postDetail, comments: comments, postId:req.params.id})
+            })
+        }
+    })
 })
 
-io.on('connection', socket => {
-    socket.on('new-user', (room, name) => {
-    socket.join(room)
-    rooms[room].users[socket.id] = name 
-    socket.to(room).broadcast.emit('user-connected', name)
-    }) 
-    socket.on('send-chat-message', (room,message) =>{
-        socket.to(room).broadcast.emit('chat-message', {message: message, name:rooms[room].users[socket.id] })
+
+
+
+
+
+
+mongoose.Promise = global.Promise; 
+mongoose.connect('mongodb://localhost/posts')
+.then(() => console.log('connection succesful'))
+.catch((err) => console.error(err))
+
+io.on('connection', function(socket){
+    socket.on('comment', function(data){
+        var commentData = new Comments(data);
+        commentData.save(); 
+        socket.broadcast.emit('comment', data)
     })
-    socket.on('disconnect', () => {
-        getUserRooms(socket).forEach(room => {
-            socket.to(room).broadcast.emit('user-disconnected', rooms[room].users[socket.id])
-            delete rooms[room].users[socket.id]
-        })
-    })
-    })
+})
 
-    function getUserRooms(socket){
-        return Object.entries(rooms).reduce((names, [name,room] ) => {
-            if(room.users[socket.id] != null) names.push(name)
-            return names
-        }, [])
-    }
-
-
-
-
-
-
+http.listen(port, function(){
+    console.log("Server running at port" + port)
+})
 
 
 const PORT = process.env.PORT || 5000;
+
+
 
 app.listen(PORT, console.log(`Server started on port ${PORT}`));
