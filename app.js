@@ -9,8 +9,15 @@ var http = require("http").Server(app);
 var io = require("socket.io")(http); 
 var Posts = require('./schema/posts'); 
 var Comments = require('./schema/comments'); 
+const methodOverride = require ('method-override')
+
+
+
+
 
 const postsRouter = require('./routes/posts')
+const notesRouter = require('./routes/notes')
+
 
 var port = process.env.port || 3000; 
 
@@ -29,6 +36,7 @@ app.use(express.static('public'))
 app.use(expressLayouts)
 app.set('view engine', 'ejs')
 
+app.use(methodOverride('_method'))
 app.use(express.urlencoded({extended:true}))
 
 app.use(session({
@@ -50,16 +58,39 @@ app.use(function(req,res, next){
     next()
 })
 
+//login and historical results routes
+
 app.use('/', require('./routes/login.js')) 
 app.use('/users', require('./routes/users.js'))
 
+
 app.use('/posts', postsRouter)
+
+app.use('/notes', notesRouter)
+
 
 app.use('/pie', function(req,res){
     res.sendFile(__dirname + 'pie.html')
 })
 
+app.use('/arrays', function(req,res){
+    res.sendFile(__dirname + 'arrays.html')
+})
 
+app.use('/functions', function(req,res){
+    res.sendFile(__dirname + 'functions.html')
+})
+
+
+app.use('/variables', function(req,res){
+    res.sendFile(__dirname + 'variables.html')
+})
+
+
+
+
+
+//Comments routes
 
 app.get('/posts', function (req, res){
     Posts.find({}, function(err,posts){
@@ -83,12 +114,6 @@ app.get('/posts/detail/:id', function(req,res){
     })
 })
 
-
-
-
-
-
-
 mongoose.Promise = global.Promise; 
 mongoose.connect('mongodb://localhost/posts')
 .then(() => console.log('connection succesful'))
@@ -105,6 +130,17 @@ io.on('connection', function(socket){
 http.listen(port, function(){
     console.log("Server running at port" + port)
 })
+
+
+
+//notes
+
+
+
+
+
+
+
 
 
 const PORT = process.env.PORT || 5000;

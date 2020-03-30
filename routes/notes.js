@@ -1,5 +1,5 @@
 const express = require('express')
-const Note = require('./../models/note')
+const Note = require('../schema/note')
 const router = express.Router() 
 
 router.get('/new', (req, res) => {

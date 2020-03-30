@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<title>Arrays</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="css/text.css" rel="stylesheet">
+<body>
+
+<div class="w3-container">
+  <div class="w3-panel w3-border w3-light-grey w3-round-large">
+    <p> Date: 09/02/2020</p> Teacher: Mr Lee 
+    <p>Lesson notes: Arrays</p>
+   
+  </div>
+</div>
+
+<div class="w3-container">
+  <div class="w3-panel w3-border w3-light-grey w3-round-large">
+ 
+    <h4> Variables </h4>
+    <h5> Understanding variables </h5>
+    <h6> When creating programs: we sometimes need a way to store information that can be used when the program is run. </h6> 
+    <h6>A way to visualise a variable, think of a box. This box can store a value which can change or 'vary'. A program can store as many variables as required </h6>
+    <h6> All variables are made up three components: </h6>
+    <h6> . A name</h6>
+    <h6> . A type</h6>
+    <h6> . A value</h6>
+    <h5> Why use variables<h5>
+    <h5> Variables are an essential part of programming.</h5>
+    <div class="w3-container" id= pocketmoney> 
+      <div class="w3-panel w3-border w3-purple w3-round-large">
+        <h5> Example: pocket money </h5>
+        <h6> We have a variable to store pocket money called 'pocket_money'. pocket_money can then be used to add or subtract from. </h6>  
+        <h6> pocketMoney = 5 </h6>
+         <h6> birthdayMoney = pocketMoney + 10</h6> 
+         <h6> print(birthdayMoney)</h6>
+        <h6> 15</h6>
+        <h6> The variable 'pocketMoney' is used to store how much pocket money we have. Right now we have £5. As well as using fixed numbers
+        in calculations and storing the answer in a variable, we can also use variables for the calculations themseleves.In our example birthdayMoney
+      can be stores is the value of pocketMoney + £10. So now when we print birthdayMoney we will have £15. Once we have our values stored, we can combine it with any 
+    other calculations. </h6>
+    <h6>Example:</h6>
+    <h6> pocketMoney = 5 </h6>
+         <h6> birthdayMoney = pocketMoney + 10</h6> 
+         <h6> print(birthdayMoney)</h6>
+        <h6> 15</h6>
+        <h6> computerGameCost = 10 </h6>
+        <h6> totalMoney = computerGameCost - pocket_money</h6> 
+        <h6> print(totalMoney)</h6>
+       <h6> 5</h6>
+      </div>
+    </div>
+    
+    <h5> Naming variables</h5>
+    <h6>Each variable is given a name so we can identify which variable is being used at any given time. </h6>
+    <h6>It is important to use unique and meaningful names for variables: </h6>
+    <h6> using our pocket money example, 'pocketMoney = 5'  means that our pocketMoney variable means we have a variable to 
+      store how much pocket money we have. So right now we have have £5. </h6>
+      <h6> As programmers, we decide what the variable is called. A variable name should be unique and have meaning, ie it should
+        reflect the value it is holding. </h6> <br> 
+
+      <h5> Data types</h5>
+      <h6> Variables can be used to store many different types of data. Some are used to store numbers, some for text and some are used for more complicated 
+        types of data. </h6>
+        <div class="w3-container">
+          <div class="w3-panel w3-border w3-purple w3-round-large">
+            <h5> Examples of data types: </h5>
+            <h6> . String (or str or text). String is used for a combination of any characters that appear on our keyboard, ie letters, numbers or symbols </h6>  
+            <h6> . Character (or char). Used for single letters.</h6>
+             <h6> . Integer (or int). Used for whole numbers. </h6> 
+             <h6> . Float (or real). Used for numbers which contain decimal points. </h6>
+            <h6> . Boolean (or bool). Used for data which are true/false or yes/no statements. </h6>
+      
+          </div>
+        </div>
+        <h6> For most programming languages, variables must be declared before they can used. For example:  </h6>
+        <h6> .Visual Basic - dim score as int</h6>
+        <h6> .Java - int score </h6><br>
+        
+        <h5> Working with text</h5>
+        <h6> We have seen varibales can store numbers. But they can also store text. Just one letter we store it as character (char).
+          More than one character we store it as a string. Text variables work in the same way as number variables, with some differences: 
+        </h6> 
+        <h6>. text variables hold characters (letters, digits, punctuation) </h6>
+        <h6>. the data in text variables need to be stored in quotes. </h6>
+        <h6>. arithmetic calculations cannot be perfomed on text variables. </h6>
+        <div class="w3-container">
+          <div class="w3-panel w3-border w3-purple w3-round-large">
+            <h5> Example: </h5>
+            <h6> message = "It's the weekend tommorrow!" </h6>  
+            <h6> print(message)</h6>
+             <h6> It's the weekend tommorrow! </h6> 
+          </div>
+        </div> 
+        <h5> Input and output</h5>
+        <h6>Programs require data to be input. Data is processed by the program and data is output as a result.</h6><br>
+        
+        <h5> Data input </h5>
+        <h6> Programs are created to solve problems. To solve a program needs data input and data output.</h6>
+        <h6> We can input data in many different ways: </h6>
+        <h6> . Character (or char). Used for single letters.</h6>
+             <h6> . Written directly to the program. This is called: hard coding. </h6> 
+             <h6> . From a user when the program is running. </h6>
+            <h6> . From a file or a database when the program is running. </h6>
+            <div class="w3-container">
+              <div class="w3-panel w3-border w3-purple w3-round-large">
+                <h5> Example: Perimeter of a square </h5>
+                <h6> sideLength = 5 </h6>  
+                <h6> perimeter = sideLength * 4 </h6>
+                 <h6> print(perimeter) </h6>
+                 <h6> The data inside the variable 'sideLength' is hard coded. This means to change this value we need to go back 
+                   into the program to change the value of 'sideLength'. Where possible, we should avoid using hard coding as it is time consuming 
+                  and difficult to change once it has been written.  </h6>
+                  <h6> sideLength = input("Type in the side length: ") </h6>  
+                  <h6> sideLength = int(sideLength)
+                  </h6>
+                  <h6> perimeter = sideLength * 4 </h6>
+                  <h6> print(perimeter) </h6>
+               
+              </div>
+            </div> 
+            <h5> Data output </h5>
+            <h6> In our updated example, the variable 'sideLength' require is a user to input a value when the program is running. 
+              The statement 'input' is used to tell the computer to wait for a user to input data before the program can continue </h6>
+              <h6> This program uses the print statement to:  </h6>
+              <h6> . Display a message explaining what data is being output. Text is placed within quotes.  </h6>
+              <h6> . Output the contents of the variable 'perimeter'. Variables are not place within quotes. </h6>
+      </body>
+</html>

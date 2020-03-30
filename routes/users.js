@@ -3,7 +3,7 @@ const router = express.Router()
 const bcrypt = require('bcryptjs')
 const passport =require('passport')
 
-const User =  require('../models/UserDetails')
+const User =  require('../schema/UserDetails')
 const {forwardAuthenticated} = require('../config/auth')
 
 router.get('/login', forwardAuthenticated, (req,res) => res.render('login'))
