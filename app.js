@@ -87,6 +87,25 @@ app.use('/variables', function(req,res){
 })
 
 
+app.use('/quiz', function(req,res){
+    res.sendFile(__dirname + 'quiz.html')
+})
+
+
+app.use('/game', function(req,res){
+    res.sendFile(__dirname + 'game.html')
+})
+
+
+app.use('/end', function(req,res){
+    res.sendFile(__dirname + 'end.html')
+})
+
+
+app.use('/highscores', function(req,res){
+    res.sendFile(__dirname + 'highscores.html')
+})
+
 
 
 
