@@ -12,9 +12,6 @@ var Comments = require('./schema/comments');
 const methodOverride = require ('method-override')
 
 
-
-
-
 const postsRouter = require('./routes/posts')
 const notesRouter = require('./routes/notes')
 
@@ -62,6 +59,8 @@ app.use(function(req,res, next){
 
 app.use('/', require('./routes/login.js')) 
 app.use('/users', require('./routes/users.js'))
+
+
 
 
 app.use('/posts', postsRouter)

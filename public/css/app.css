@@ -1,5 +1,5 @@
 :root {
-    background-color: #ecf5ff;    
+    background-color: white;    
     font-size: 62.5%; 
 }
 
@@ -74,8 +74,7 @@ h3{
 .btn{
     font-size: 1.8rem;
     padding: 1rem 0;
-    width: 20rem; 
-    text-align: center;
+    width: 70rem; 
     border: 0.1rem solid #56a5eb; 
     margin-bottom: 1rem;
     text-decoration: none;
