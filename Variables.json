@@ -1,0 +1,84 @@
+[
+{
+  "question": "What is a variable?",
+  "choice1": "A variable is a number", 
+  "choice2": "A variable is a message input by the user", 
+	"choice3": "A variable is a location in memory that we use to store data", 
+  "choice4": "None of the following", 
+  "answer": 3
+ },
+	{
+    "question": "Why are varibales so named",
+    "choice1": "Variables are so named because we can choose whether or not to use them",
+    "choice2": "None of the following", 
+		"choice3": "Variables are so named because the data we store in them can change", 
+    "choice4": "Because we can change their names", 
+    "answer": 3  
+  
+	},
+	{
+		"question": "A variable is needed to record a students surname. Which of the following would be the most meaningful variable name?",
+    "choice1": "name",
+    "choice2": "student_name",
+    "choice3": "student_firstname",
+    "choice4": "student_surname", 
+    "answer": 4
+   
+  },
+	{
+    "question": "How can strings and variables be told apart?",
+    "choice1": "The data in a string is stored inside quotes", 
+    "choice2": "None of the following", 
+    "choice3": "By its name",
+    "choice4": "By its size",
+	  "answer": 1 
+	},
+	{
+    "question": "In programming what name is given to the data type which represents decimal numbers?",
+    "choice1": "integers", 
+    "choice2": "strings",
+    "choice3": "number", 
+    "choice4": "floating point numbers",
+    "answer": 3
+	},
+	{
+    "question": "Which statement is used to specify a decimal number?",
+    "choice1": "int",
+    "choice2": "num",
+    "choice3": "str",
+    "choice4": "float", 
+    "answer": 4
+	},
+	{
+    "description": "Which statement is used to specify a true/false value?", 
+    "choice1": "bool", 
+  	"choice2": "char",
+		"choice3": "string",
+    "choice4": "integer", 
+    "answer": 1
+	},
+	{
+    "question": "What data type stores a single letter", 
+    "choice1": "str",
+     "choice2": "char", 
+     "choice3": "float",
+    "choice4": "int",
+    "answer": 2
+	},
+	{
+    "question": "Consider the following code: money_in_bank = 20 total_money = money_in_bank + 10 print (total_money) What is the value of total_money?",
+    "choice1": "10",
+    "choice2": "20",
+		"choice3": "30",
+    "choice4": "40", 
+    "answer": 3
+	},
+	{
+		"question": "In programming what name is given to the data type which represents whole numbers?",
+    "choice1": "integers", 
+    "choice2": "number",
+    "choice3": "strings",
+   "choice4": "floating point numbers",
+   "answer": 1
+}
+]

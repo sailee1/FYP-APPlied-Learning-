@@ -1,0 +1,83 @@
+[
+{
+ "question":"What is a data structure?", 
+    "choice1": "A list of variables", 
+    "choice2": "A list of variables and strings",
+    "choice3": "A facility that holds more than one value", 
+    "choice4": "None of the following",
+    "answer": 3
+  },
+  {
+    "question": "What is an array?", 
+    "choice1": "None of the following",
+    "choice2": "A list of variables",
+    "choice3": "A list of strings",
+    "choice4": "To series of memory locations, each within the same name, that hold related data", 
+    "answer": 4
+  },
+  {
+    "question": "Why are arrays used?",
+    "choice1": "Arrays store multiple data values under one name reducing the complexity of our program",  
+    "choice2": "Arrays store more data than if we were using variables",
+    "choice3": "None of the following",
+     "choice4": "Arrays store more data than if we were using strings",
+     "answer": 1 
+  },
+  {
+    "question": "In an array, what is an element?",
+    "choice1": "None of the following", 
+    "choice2": "The smallest number an array can hold", 
+    "choice3": "The biggest number an array can hold",
+    "choice4": "An element is one value in an array" ,
+    "answer": 2 
+  },
+  {
+    "question": "How many elements would the array 'student marks (10)' hold?",
+    "choice1": "Zero elements",
+    "choice2": "Nine elements", 
+    "choice3": "Ten elements", 
+    "choice4": "Eleven elements",
+    "answer": 2 
+ 
+  },
+  {
+    "question": "In the array 'numbers(6,10,7,9,2)' what is the value of element number (4)?",
+    "choice1": "Eight", 
+    "choice2": "Nine", 
+    "choice3": "Twelve",
+    "choice4": "Two", 
+    "answer": 2
+  }, 
+  {
+    "question": "In the array 'colours(purple, blue, red, green, yellow)' what is the value of element colours (3)?", 
+    "choice1": "green", 
+    "choice2": "red",
+    "choice3": "purple", 
+    "choice4": "black",
+    "answer": 1
+  }, 
+  {
+    "question": "In the array 'names(John, Ali, Sarah)' what is the value of element number (2)?",
+    "choice1": "David",
+    "choice2": "John", 
+    "choice3": "Ali",
+    "choice4": "Sarah",  
+    "answer": 4
+  }, 
+  {
+    "question": "What is the difference between an array and a list?",
+    "choice1": "None of the following",
+   "choice2": "An array holds numbers, whereas a list holds strings",
+    "choice3": "An array can only hold data of the same data type, whereas lists can hold values of different data types", 
+    "choice4": "An array holds both numbers and strings, whereas a list only holds numbers", 
+    "answer": 3
+  },
+  {
+    "question": "When creating the array 'scores(9)', what the (9) in brackets represent?",
+    "choice1": "None of the following",
+    "choice2": "The number of elements the array can hold", 
+    "choice3": "The largest number of digits an element can hold",
+    "choice4": "The largest number of characters an element can hold",
+    "answer": 2
+  }
+]

@@ -1,0 +1,91 @@
+[
+{
+    "question": "What is a procedure?",
+    "choice1": "A set of iterated statements", 
+		"choice2": "A small section of code within a program which performs a task", 
+    "choice3": "A decision point in a program",
+    "choice4": "None of the following",
+    "answer": 2
+
+  },
+	{
+    "question": "Why are procedures used?",
+		"choice1": "None of the following",
+		"choice2": "To make code more readable",
+		"choice3": "To reduce repetition of code", 
+   "choice4": "To make decisions",
+   "answer": 3
+
+	},
+	{
+    "question": "Why are functions used?",
+    "choice1": "To make code more readable", 
+		"choice2": "To reduce repetition of code and to calculate a value", 
+		"choice3": "None of the following",
+    "choice4": "To make decisions",
+    "answer": 2
+
+  },
+	{
+    "question": "What is the difference between a function and a procedure?",
+    "choice1": "None of the following", 
+    "choice2": "A procedure produces a calculated result whereas a function performs a task",
+    "choice3": "A procedure iterates code whereas a function is a decision point", 
+    "choice4": "A procedure performs a task whereas a funciton produces a calculated result",
+    "answer": 2
+
+  }, 
+	{
+    "question": "What statement is used to create a procedure or function?",
+    "choice1": "Make",
+		"choice2": "Elif", 
+    "choice3": "def", 
+    "choice4": "None of the following", 
+    "answer": 2 
+  },
+	{
+    "question": "What term is given to running a procedure or function?",
+    "choice1": "None of the following",
+     "choice2": "call",
+     "choice3": "execute", 
+    "choice4": "perform", 
+    "answer": 3 
+
+	},
+	{
+    "question": "What term is given to passing back of the value calculated in a function?",
+  	"choice1": "overwritten",
+    "choice2": "returned",  
+    "choice3": "repeated",
+    "choice4": "None of the following",
+    "answer": 2
+
+	},
+	{
+    "question": "Which of the following is a procedure?",
+    "choice1": "A section of code which converts Farenheit to Celsius",
+    "choice2": "A section of code which calculates the VAT on a selling price",
+    "choice3": "A section of code which resets all variables to zero", 
+    "choice4": "None of the following", 
+    "answer": 3
+
+	},
+	{
+    "question": "Which of the following is a function?",
+    "choice1": "A section of code which converts Farenheit to Celsius",
+    "choice2": "A section of code which updates a display", 
+    "choice3": "A section of code which resets all variables to zero",
+    "choice4": "None of the following",
+    "answer": 1 
+ 
+	},
+	{
+    "question": "Why is code indented in a procedure or a function",
+    "choice1": "None of the following", 
+		"choice2": "To show that it belongs within a procedure or function", 
+    "choice3": "To make it more readable", 
+    "choice4": "To show that should be iterated", 
+    "answer": 2 
+ 
+	}
+]
