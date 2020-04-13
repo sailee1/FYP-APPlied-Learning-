@@ -92,8 +92,16 @@ app.use('/quiz', function(req,res){
 })
 
 
-app.use('/game', function(req,res){
-    res.sendFile(__dirname + 'game.html')
+app.use('/functionsquiz', function(req,res){
+    res.sendFile(__dirname + 'functionsquiz.html')
+})
+
+app.use('/variablesquiz', function(req,res){
+    res.sendFile(__dirname + 'variablesquiz.html')
+})
+
+app.use('/arraysquiz', function(req,res){
+    res.sendFile(__dirname + 'arraysquiz.html')
 })
 
 

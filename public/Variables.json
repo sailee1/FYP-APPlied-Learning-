@@ -8,7 +8,7 @@
   "answer": 3
  },
 	{
-    "question": "Why are varibales so named",
+    "question": "Why are variables so named",
     "choice1": "Variables are so named because we can choose whether or not to use them",
     "choice2": "None of the following", 
 		"choice3": "Variables are so named because the data we store in them can change", 
@@ -50,7 +50,7 @@
     "answer": 4
 	},
 	{
-    "description": "Which statement is used to specify a true/false value?", 
+    "question": "Which statement is used to specify a true/false value?", 
     "choice1": "bool", 
   	"choice2": "char",
 		"choice3": "string",
@@ -58,7 +58,7 @@
     "answer": 1
 	},
 	{
-    "question": "What data type stores a single letter", 
+    "question": "What data type stores a single letter?", 
     "choice1": "str",
      "choice2": "char", 
      "choice3": "float",
