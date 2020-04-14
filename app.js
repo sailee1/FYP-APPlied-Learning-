@@ -16,7 +16,7 @@ const postsRouter = require('./routes/posts')
 const notesRouter = require('./routes/notes')
 
 
-var port = process.env.PORT || 3000; 
+var port = process.env.port || 3000; 
 
 require('./config/passport')(passport)
 
