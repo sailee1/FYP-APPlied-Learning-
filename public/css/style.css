@@ -1,0 +1,23 @@
+.logo {
+    display: block;
+    text-align: center;  
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+}
+
+/* .main-body {
+    margin-left: auto;
+    margin-right: auto;  
+    
+} */
+
+.links {
+    /* margin-left: auto;
+    margin-right: auto;  */
+   
+    text-align: center; 
+    display: flex;
+  
+   
+}

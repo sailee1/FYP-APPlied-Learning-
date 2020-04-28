@@ -68,22 +68,36 @@ app.use('/posts', postsRouter)
 app.use('/notes', notesRouter)
 
 
-app.use('/pie', function(req,res){
-    res.sendFile(__dirname + 'pie.html')
+app.use('/arraychart', function(req,res){
+    res.render('arraychart')
 })
 
-app.use('/arrays', function(req,res){
-    res.sendFile(__dirname + 'arrays.html')
+app.use('/functionchart', function(req,res){
+    res.render('functionchart')
 })
 
-app.use('/functions', function(req,res){
-    res.sendFile(__dirname + 'functions.html')
+app.use('/variablechart', function(req,res){
+    res.render('variablechart')
 })
+
 
 
 app.use('/variables', function(req,res){
-    res.sendFile(__dirname + 'variables.html')
+    res.render('variables')
 })
+
+    app.use('/functions', function(req,res){
+        res.render('functions')
+    })
+
+    app.use('/arrays', function(req,res){
+            res.render('arrays')
+        })
+
+/* app.use('/pie', function(req,res){
+    res.sendFile(__dirname + 'pie.html')
+})
+ */
 
 
 app.use('/quiz', function(req,res){
@@ -113,6 +127,9 @@ app.use('/highscores', function(req,res){
     res.sendFile(__dirname + 'highscores.html')
 })
 
+app.use('/todo', function(req,res){
+    res.sendFile(__dirname + 'todo.html')
+})
 
 
 
@@ -169,8 +186,4 @@ http.listen(port, function(){
 
 
 
-const PORT = process.env.PORT || 5000;
 
-
-
-app.listen(PORT, console.log(`Server started on port ${PORT}`));
