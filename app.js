@@ -101,7 +101,7 @@ app.use('/variables', function(req,res){
 
 
 app.use('/quiz', function(req,res){
-    res.sendFile(__dirname + 'quiz.html')
+    res.render('quiz')
 })
 
 
@@ -128,7 +128,7 @@ app.use('/highscores', function(req,res){
 })
 
 app.use('/todo', function(req,res){
-    res.sendFile(__dirname + 'todo.html')
+    res.render('todo')
 })
 
 

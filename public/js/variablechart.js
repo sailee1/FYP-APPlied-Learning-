@@ -3,7 +3,7 @@ $(document).ready(function () {
 	var ctx1 = $("#pie-chartcanvas-1");
    
 	var data1 = {
-		labels : ["100-96%", "95-91%", "90-86%", "85-81%", "80-76%", ">75%"],
+		labels : ["Grades: 100-96%", "Grades: 95-91%", "Grades: 90-86%", "Grades: 85-81%", "Grades: 80-76%", "Grades: >75%"],
 		datasets:	[	
 			{
 				label : "Variables quiz results 2019",
@@ -41,7 +41,8 @@ $(document).ready(function () {
 		},
 		legend : {
 			display : true,
-			position : "right"
+			position : "right", 
+			fontSize: 18
 		}
 	};
 
