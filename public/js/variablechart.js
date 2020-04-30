@@ -77,7 +77,7 @@ $(document).ready(function () {
 			display : true,
 			position : "top",
 			text : "Variables quiz results 2019",
-			fontSize : 18,
+			fontSize : 40,
 			fontColor : "#111"
 		},
 		legend : {

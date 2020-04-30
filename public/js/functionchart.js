@@ -76,8 +76,8 @@ $(document).ready(function () {
 		title : {
 			display : true,
 			position : "top",
-			text : "Functions and procedures quiz results 2019",
-			fontSize : 18,
+			text : "Functions and Procedures quiz results 2019",
+			fontSize : 40,
 			fontColor : "#111"
 		},
 		legend : {
