@@ -2,17 +2,53 @@ $(document).ready(function () {
 
 	var ctx1 = $("#pie-chartcanvas-1");
    
+	var jsonfile = {
+		"title": "Array quiz results 2019", 
+		"jsonarray": [
+		{
+		   "grades": "Grades: 100-96%",
+		   "results": 12
+		}, {
+		   "grades": "Grades: 95-91%",
+		   "results": 16
+		}, 
+		 {
+		   "grades": "Grades: 90-86%",
+		   "results": 5
+		},{  
+		 	"grades": "Grades: 85-81%",
+		   "results": 4
+		}, 
+		 {
+		   "grades": "Grades: 80-76%",
+		   "results": 3
+		}, 
+		 {
+		   "grades": "Grades: >75",
+		   "results": 2
+		}
+	 ]
+	 };
+	 
+	 var title = jsonfile.jsonarray.map(function(e) {
+		return e.title;
+	 });
+
+	 var labels = jsonfile.jsonarray.map(function(e) {
+		return e.grades;
+	 });
+	 var data = jsonfile.jsonarray.map(function(e) {
+		return e.results;
+	 });;
+
+
+
 	var data1 = {
-		labels :   ["Grades: 100-96%", "Grades: 95-91%", "Grades: 90-86%", "Grades: 85-81%", "Grades: 80-76%", "Grades: >75%"],
+		labels : labels, 
 		datasets : [
 			{
-				label : "Functions and procedures quiz results 2019",
-				data :   [12, 
-				16, 
-				5, 
-				4, 
-				3, 
-				2],
+				label : title,
+				data :  data,
 				backgroundColor : [
 					"#7CDDDD",
                     "#007ED6",
