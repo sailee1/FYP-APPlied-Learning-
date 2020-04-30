@@ -106,25 +106,41 @@ app.use('/quiz', function(req,res){
 
 
 app.use('/functionsquiz', function(req,res){
-    res.sendFile(__dirname + 'functionsquiz.html')
+    res.render('functionsquiz')
 })
 
 app.use('/variablesquiz', function(req,res){
-    res.sendFile(__dirname + 'variablesquiz.html')
+    res.render('variablesquiz')
 })
 
 app.use('/arraysquiz', function(req,res){
-    res.sendFile(__dirname + 'arraysquiz.html')
+    res.render('arraysquiz')
 })
 
 
-app.use('/end', function(req,res){
-    res.sendFile(__dirname + 'end.html')
+app.use('/endfunctions', function(req,res){
+    res.render('endfunctions')
+})
+
+app.use('/endarrays', function(req,res){
+    res.render('endarrays')
+})
+
+app.use('/endvariables', function(req,res){
+    res.render('endvariables')
 })
 
 
-app.use('/highscores', function(req,res){
-    res.sendFile(__dirname + 'highscores.html')
+app.use('/resultsfunctions', function(req,res){
+    res.render('resultsfunctions')
+})
+
+app.use('/resultsarrays', function(req,res){
+    res.render('resultsarrays')
+})
+
+app.use('/resultsvariables', function(req,res){
+    res.render('resultsvariables')
 })
 
 app.use('/todo', function(req,res){

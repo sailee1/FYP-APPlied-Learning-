@@ -29,5 +29,5 @@ saveHighScore = e => {
   functionResults.splice(5);
 
   localStorage.setItem("functionResults", JSON.stringify(functionResults));
-  window.location.assign("/resultsfunctions.html");
+  window.location.assign("/resultsfunctions");
 };
