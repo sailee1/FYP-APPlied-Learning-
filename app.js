@@ -174,7 +174,7 @@ app.get('/posts/detail/:id', function(req,res){
 })
 
 mongoose.Promise = global.Promise; 
-mongoose.connect('mongodb://localhost/posts')
+mongoose.connect('mongodb://localhost/messages')
 .then(() => console.log('connection succesful'))
 .catch((err) => console.error(err))
 

@@ -1,0 +1,21 @@
+C:\Program Files\MongoDB\Server
+
+
+mongoimport --db Questions --collection q --type json --file "C:\Users\Saichung Lee\Desktop\quizdata\Questions.json" --jsonArray
+
+
+
+
+TEST 
+
+mongoimport --db Test --collection players --type json --file "C:\Users\Saichung Lee\Desktop\squad10.json" --jsonArray
+
+
+
+
+
+mongoimport --db messages --collection posts --type json --file "C:\Users\Saichung Lee\Desktop\APPlied Learning\posts.json" --jsonArray
+
+
+
+
