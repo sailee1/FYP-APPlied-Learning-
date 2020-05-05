@@ -1,17 +1,19 @@
 
-
-<link
-  href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700,900&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="css/todo.css" />
+<link rel="stylesheet" href="css/style.css" />
 
 
  
 <script defer src="js/todo.js"></script>
 
-<div class="custom-container">
+<center><h1>Homework Planner</h1></center>
+
 
 <div class="all-tasks">
+  
 
+
+
+  <h2>Task list</h2>
   <ul class="task-list" data-lists></ul>
 
   <form action="" data-new-list-form>
@@ -26,11 +28,15 @@
   </form>
 </div>
 
+<br>
+<div class="todo-holder">
 <div class="todo-list" data-list-display-container>
   <div class="todo-header">
     <h2 class="list-title" data-list-title>Homework</h2>
     <p class="task-count" data-list-count>3 tasks remaining</p>
   </div>
+
+ 
 
   <div class="todo-body">
     <div class="tasks" data-tasks></div>
@@ -54,9 +60,9 @@
     </div>
   </div>
 </div>
-
-
 </div>
+
+
 <template id="task-template">
   <div class="task">
     <input type="checkbox" />
@@ -65,4 +71,7 @@
     </label>
   </div>
 </template>
+</div>
+</div>
+
 </div>
