@@ -76,7 +76,7 @@ $(document).ready(function () {
 		title : {
 			display : true,
 			position : "top",
-			text : "Variables quiz results 2019",
+			text : "", 
 			fontSize : 40,
 			fontColor : "#111"
 		},

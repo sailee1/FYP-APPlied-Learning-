@@ -1,4 +1,5 @@
 
+<link rel="stylesheet" href="css/style.css" />
   
 <div class="w3-container">
   <div class="w3-panel w3-border w3-light-grey w3-round-large">
@@ -10,6 +11,116 @@
 
 <div class="w3-container">
   <div class="w3-panel w3-border w3-light-grey w3-round-large">
+
+    <h4> Procedures </h4>
+    <h5> What is a procedure? </h5>
+     A procedure is a small section of a program that performs a specific task. Procedures can be used repeatedley throughout a program. 
+    <h5>Why do we use procedures? </h5>
+      Program code is easier to understand when it is broken up into smaller sections. Procedures make code shorter and simpler.
+      Using procedures make a program easier to debug. Procedures can be reused in the program making it simpler and quicker to code. 
+
+      <br> <br> 
+
+      It is is also better to use procedures as if something needs to be changed in a procedure, it only needs to be changed once within a program. 
+      <br>This change will then appear anywhere else the procedure is used within the program. If procedures are not used, the code would 
+      <br> need to be ammended every time it was used in the program. 
+
+      <br> 
+      <br> 
+      <h4> Writing a procedure </h4>
+      It is very easy to write a procedure. Every procedure needs: 
+      <ul>
+        <li> a name</li>
+        <li>The program code needed for the task</li>
+      </ul>
+      <br> 
+
+      
+
+      <h5> Procedures in Python</h5>
+     <div class="w3-container">
+       <div class="w3-panel w3-border w3-purple w3-round-large">
+         <h5> Example: Player information </h5>
+         <h6> def update_display():  </h6>  
+         <h6>   print("Your score: " + 
+          <br> str(score)) </h6>  
+         <h6>   time.sleep(1) </h6>  
+         <h6> print ("High score: " + 
+           <br> str("high_score")) </h6>  
+         <h6>   time.sleep(1) </h6>  
+         <h6> print("Lives remaining: " + 
+         <br> str("lives")) </h6>  
+         <h6>   time.sleep(1).</h6>
+          
+       </div>
+     </div>
+      
+    
+     To create a procedure, first give the procedure a name. 
+      <br> Brackets are needed at end of the procedures name: 
+    </br> def update_display():
+    <br> <br> Indented code tells Python that the code belongs to a procedure.
+
+    <br><br> 
+
+    <h5> Calling a procedure means running it. </h5>
+
+    <h5> Running a procedure in Python</h5>
+    once a procedure is named and written it can be called at any time in the program. 
+    <br> 
+    
+    To call a procedure simply, use its name (and make sure to include the brackets): 
+
+    To extend our example we could add levels to our player information game. 
+    <ul>
+      <li> at the end of a level</li>
+      <li> when the player loses a life</li>
+      <li>when the player beats the high score</li>
+      <li>when the game is over</li>
+    </ul>
+
+  Each time you need to print out the player information, you simply call the procedure. 
+  <div class="w3-container">
+    <div class="w3-panel w3-border w3-purple w3-round-large">
+      <h5> Example: Player information </h5>
+      <h6> def update_display():  </h6>  
+      <h6>   print("Your score: " + 
+       <br> str(score)) </h6>  
+      <h6>   time.sleep(1) </h6>  
+      <h6> print ("High score: " + 
+        <br> str("high_score")) </h6>  
+      <h6>   time.sleep(1) </h6>  
+      <h6> print("Lives remaining: " + 
+      <br> str("lives")) </h6>  
+      <h6>   time.sleep(1)</h6>
+      
+      <br> 
+
+      <h6> # End of level</h6>
+      <h6>update_display()</h6>
+
+      <br> 
+
+      <h6> # Lose a life </h6>
+      <h6>update_display()</h6>
+
+      <br> 
+
+      <h6> # New high score </h6>
+      <h6>update_display()</h6>
+
+      <br> 
+
+      <h6> # Game over</h6>
+      <h6>update_display()</h6>
+      
+
+    </div>
+  </div>
+
+  Using this procedure greatly reduces the amount of code that needs to be included in the program. 
+  <br> This makes the program easier to read and understand. This also helps if you need to debug the program. 
+
  
     <h4> Functions </h4>
     <h5> What is a function? </h5>
@@ -21,16 +132,20 @@
      Sometimes, feedback is needed. Example: If you're playing a board game that uses a dice, you need to the roll the dice to see how many moves you need to make. </h6>
      A function is like a procedure, except that you need to wait to see what the result is. 
     Variables are an essential part of programming.
+
+    <br><br>
    
       <h5> Writing a function</h5>
     Writing a function is simple. Every function needs: 
-  <br>. a name  
-    <br> . the values that it needs to use for the calculation. 
-      <br> . the program code to perform the task. 
-      <br> . a value to return to the main program.
+  <ul>
+    <li> name  
+    <li>  the values that it needs to use for the calculation. 
+      <li>  the program code to perform the task. 
+      <li>  a value to return to the main program.
+      </ul>
     
       <br> 
-      <br> <h5> Functions in Python</h5>
+       <h5> Functions in Python</h5>
       <div class="w3-container">
         <div class="w3-panel w3-border w3-purple w3-round-large">
           <h5> Example: Throwing a dice </h5>
@@ -41,7 +156,7 @@
           <h6> random(number) </h6>  
           <h6> sides = int(input("How many side does the dice have?")).</h6>
            <h6> throw = rollDice(sides) </h6> 
-           <h6> print(throw) </h6>
+           <b6> print(throw) </h6>
 
     
         </div>
@@ -56,3 +171,9 @@
 
   </div>
   </div>
+  <div class="buttons">
+
+    <a href="/lessons" class="button"> Lesson notes </a>
+
+  </div> 
+

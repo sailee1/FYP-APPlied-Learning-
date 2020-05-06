@@ -147,7 +147,13 @@ app.use('/todo', function(req,res){
     res.render('todo')
 })
 
+app.use('/lessons', function(req,res){
+    res.render('lessons')
+})
 
+app.use('/graphs', function(req,res){
+    res.render('graphs')
+})
 
 //Comments routes
 
